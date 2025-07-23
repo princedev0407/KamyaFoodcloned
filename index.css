@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.container{
+    min-width: 100%;
+    height: 110px;
+    border: solid 1px black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar{
+    background-color: white;
+    display: flex;
+    border: solid 1px black;
+    width: 97%;
+    height: 95%;
+    margin-top: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar #logo{
+    background-image: url("./assets/images/Kamya-Logo-01-1.png");
+    margin-left: 20px;
+    height: 98%;
+    width: 7%;
+    border: solid 1px black;
+    background-size: cover;
+}
+
+#nav-links{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    width: 60%;
+    font-size: 17px;
+    font-weight: 700;
+    & a{
+        text-decoration: none;
+    }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  text-decoration: none;
+  color: #001A66;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 12px 0;
+  min-width: 220px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #001A66;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+/* Hover to show menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+#cart{
+    margin-right: 30px;
+    height: 40px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+#cart span{
+    font-size: 18px;
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-img{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.column-img{
+  height: 80%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  background: url("./assets/images/Lite-Sattu-1-scaled-1\ \(1\).webp");
+  background-size: cover;
+}
