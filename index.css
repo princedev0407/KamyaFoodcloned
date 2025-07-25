@@ -18,7 +18,7 @@
   background-color: white;
   display: flex;
   width: 97%;
-  height: 95%;
+  height: 96%;
   margin-top: 2px;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +27,8 @@
 #navbar #logo {
   background-image: url("./assets/images/Kamya-Logo-01-1.png");
   margin-left: 20px;
-  height: 98%;
-  width: 7%;
+  height: 100%;
+  width: 8%;
   background-size: cover;
 }
 
@@ -51,8 +51,8 @@
 
 .dropdown-toggle {
   text-decoration: none;
-  color: #001a66;
-  font-weight: 900;
+  color: #001a66e6;
+  font-weight: 700;
   font-size: 17px;
 }
 
@@ -135,14 +135,235 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-#top-selling{
+#top-selling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+#text h1 {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#tp-img {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+#tp-img img {
+  height: 370px;
+  width: 370px;
+}
+#tp-img h1 {
+  padding-left: 40px;
+}
+
+#container {
+  height: 185vh;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+#container #container-img1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./assets/images/Amazon-Store-Page-4-scaled.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+#container #container-img2 {
+  height: 50%;
+  width: 100%;
+  background: url("./assets/images/amzon2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+#features {
+  height: 210vh;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features #feat-text {
+  display: flex;
+  column-gap: 7px;
+}
+
+#features #feat-text #db {
+  font-size: 44px;
+  color: darkblue;
+  font-weight: 800;
+}
+
+#animate-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#features #feat-text #animate-box #dp {
+  font-size: 44px;
+  color: #b80c8c;
+  font-weight: 800;
+}
+
+#features #feat-text #animate-box #ani-img {
+  background: url("./assets/images/abx.svg");
+  margin-top: -124px;
+  height: 154px;
+  width: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#features .feat-product {
+  padding: 30px;
+  display: flex;
+  row-gap: 30px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#features .feat-product img {
+  border-radius: 50px;
+}
+
+#footer {
+  height: 86vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer #footer-box {
+  height: 87%;
+  width: 100%;
+  display: flex;
+  background-color: #001a66;
+  column-gap: 20px;
+}
+#footer #footer-box #footer-content1 {
+  padding-top: 50px;
+  height: 100%;
+  margin-left: 130px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+#footer #footer-box #footer-content1 #foot-logo {
+  background-image: url("./assets/images/Kamya-Logo-01-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15vh;
+  width: 8vw;
+}
+
+#footer #footer-box #footer-content1 #kamya h1{
+  color: white;
+  font-size: 28px;
+}
+#footer #footer-box #footer-content1 #para p{
+  color: white;
+  font-weight: 400;
+}
+#footer #footer-box #footer-content1 #social-logo{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+}
+
+#footer #footer-box #footer-content1 #social-logo .slg{
+  height: 100%;
+  width: 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#footer #footer-box .footer-content2 {
+  padding-top: 50px;
+  border: solid black 1px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  color: white;
+}
+
+#footer #footer-box .footer-content2 .list{
+  line-height: 2;
+  font-size: 17px;
+}
+#footer #footer-box .footer-content2 .list .list1 {
+  list-style: none;
+}
+
+#footer #footer-box .footer-content2 .list1 a {
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: rgb(201, 189, 174);
+  }
+}
+
+#footer #footer-box .footer-content3{
+  padding-top: 50px;
+  border: solid black 1px;
+  height: 100%;
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  color: white;
+}
+
+#footer #footer-box .footer-content3 p{
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+#footer #footer-box .footer-content3 #contact{
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+#footer #copyright {
+  height: 13%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#
-#tp-img{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+#footer #copyright #copyright-text {
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
 }
